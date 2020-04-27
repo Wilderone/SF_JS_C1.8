@@ -15,7 +15,7 @@ jQuery.prototype.text = function (text = '') {
     this.text = text
     if (text == '') {
         let arr = []
-        console.log(this.each(element => arr.push(element.textContent)))
+        this.each(element => arr.push(element.textContent))
         return arr;
     } else {
         this.each(element => element.innerText = text);
